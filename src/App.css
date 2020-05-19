@@ -1,0 +1,61 @@
+#color2 {
+  margin: -40vh 50vh 1em 50vh;
+  height: 5em;
+  padding-top: 5em;
+}
+
+#input-field {
+  margin-top: 55vh;
+  text-align: center;
+}
+
+#buttonDisplay {
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin : 1em 75vh 0 75vh;
+}
+
+#buttons {
+  margin: 0 .5em 0 .5em;
+
+}
+
+#inputtext {
+  border: 1px solid black;
+  width: 25em;
+  font-size: large;
+  height: 1.5em;
+  padding-left: .5em;
+}
+
+#mButton {
+  height: 1.8em;
+  font-size: large;
+  border: none;
+  background-color: aquamarine;
+  margin: 0 10px 0 10px;
+  border-radius: .15em;
+}
+
+#mButtontwo {
+  height: 1.8em;
+  font-size: large;
+  border: none;
+  background-color: rgb(251, 255, 10);
+  margin: 0 10px 0 0;
+  border-radius: .15em;
+}
+
+#colorButton {
+  height: 1.8em;
+  font-size: large;
+  border: 2px solid black;
+  margin: 0 10px 0 0;
+  border-radius: .15em;
+  margin: 5px 0 5px 0;
+  width: 5em;
+}
+#link {
+  text-align: center;
+}
