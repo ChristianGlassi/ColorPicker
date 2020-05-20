@@ -1,41 +1,40 @@
 # See Colors
-
- A beginner react project that uses React concepts like State and Components in order to create an app that allows you to enter and see a color, temporarily store that color as a set buttons you can switch between. 
-
+ 
+ A beginner Reactjs project that uses React concepts like State and Components in order to create an app that allows you to enter and see a color, temporarily store that color as a set button you can switch between. 
+ 
 ## Motivation
 I needed something to build and did not want to copy the Reactjs Tic Tac Toe tutorial. I also really like seeing different colors.
-
-
+ 
+ 
 ## Tech/framework used
-
+ 
 <b>Built with</b>
 - [Reactjs](https://reactjs.org/)
-
+ 
 ## Features
-In order for a button to be created and the color box to show a color, the input needs to be an actual color. In order to solve that problem I used the existing HTML DOM to check the if the user input is a color. I set the backgroundColor of the app's root to the input, if the input returns null then that color does not exist.
-
-
+In order for a button to be created and the color box to show color, the input needs to be an actual color. In order to solve that problem, I used the existing HTML DOM to check if the user input is a color. I set the backgroundColor of the app's root to the input if the input returns null then that color does not exist.
+ 
+ 
 ## Installation
-
 Once you have pulled or downloaded the code
-
+ 
 **To install packages**
-
+ 
 ```npm install ``` 
-
+ 
 **To run a development build**
-
+ 
 ```npm start``` 
-
+ 
 ### To run a production build locally
-
+ 
 ```npm run build```
-
+ 
 ```npm i -g serve```
-
+ 
 ```serve -s build```
-
-
+ 
+ 
 ## License
 MIT License
 
