@@ -8,7 +8,7 @@ class Main extends Component {
         super(props)
         this.state = {
             color : '',
-            colorList : [],
+            colorHistory : [],
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -24,20 +24,20 @@ class Main extends Component {
 
         if(background.backgroundColor === '' && this.state.color !== 'white') {
 
-        } else if(this.state.colorList.includes(this.state.color.toLowerCase())) {
+        } else if(this.state.colorHistory.includes(this.state.color.toLowerCase())) {
             background.backgroundColor = ''
 
         } else {
             background.backgroundColor = ''
-            var colorlistThing = this.state.colorList
-            colorlistThing.push(this.state.color.toLowerCase())
-            this.setState({colorList: colorlistThing})
+            var colorHistoryTemp = this.state.colorHistory
+            colorHistoryTemp.push(this.state.color.toLowerCase())
+            this.setState({colorHistory: colorHistoryTemp})
         }
         event.preventDefault()
     }
 
     handleClear() {
-        this.setState({colorList: [], color: ''})
+        this.setState({colorHistory: [], color: ''})
     }
 
 
@@ -51,7 +51,7 @@ class Main extends Component {
                     <button onClick={this.handleClear} id='mButtontwo'>Clear</button>
                 </form>
                 <div id='buttonDisplay'>
-                    <Map colors={this.state.colorList}/>
+                    <Map colors={this.state.colorHistory}/>
                 </div>
             </div>
         )
